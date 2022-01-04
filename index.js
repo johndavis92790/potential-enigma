@@ -124,22 +124,6 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-// function writeToFile(filename, data) {
-//   return new Promise((resolve, reject) => {
-//     fs.writeToFile(filename, data, err => {
-//       if (err) {
-//         reject(err);
-//         return;
-//       }
-
-//       resolve({
-//         ok: true,
-//         message: 'README created!'
-//       });
-//     });
-//   });
-// };
-
 const writeFile = data => {
   return new Promise((resolve, reject) => {
     fs.writeFile('./dist/README.md', data, err => {
